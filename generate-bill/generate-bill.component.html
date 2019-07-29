@@ -1,0 +1,70 @@
+<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+<div class="container">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Please enter details to Generate Bill </h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form [formGroup]="billForm">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="text" ng-model="cName" name="Customer Name" id="cName" class="form-control input-sm" placeholder="Customer Name" formControlName="cName">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					
+			    				</div>
+			    			</div>
+
+			    			
+						
+										
+											<div class="form-group" ng-app="">
+                        	<input type="text" ng-model="serviceCharge" name="Service Charge" id="serviceCharge" class="form-control input-sm" placeholder=" Service Charge" formControlName="serviceCharge">
+		                    	<input type="text" name="oil Charge"ng-model="oil" id="oil" class="form-control input-sm" placeholder="oil Charge" formControlName="oil">
+										    	<input type="text" name="spareParts Charge"ng-model="spareCharge" id="spareCharge" class="form-control input-sm" placeholder="spareParts Charge" formControlName="spareCharge">
+                      	  Sum: {{serviceCharge*1 + oil*1 + spareCharge*1}}
+                        </div>
+
+			          
+							
+			    		<!--<input type="submit" value="Generate" class="btn btn-info btn-block" (click)=alert("Your Bill is:" {{serviceCharge+oil+spareCharge}})>-->
+					
+			    <!--<h1> Your Bill is:{{(serviceCharge|number)+(oil|number)+(spareCharge|number)}}</h1>
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+-->
+
+<div style="text-align:center"> 
+
+<b>Customer Name :   <input type="text" [(ngModel)] ="cName"></b>
+<br>
+<br>
+<b>Service Charge :   <input type="text" [(ngModel)] ="serviceCharge"></b>
+<br>
+<br>
+<b>Oiling Charge :    <input type="text" [(ngModel)] ="Oiling"></b>
+<br>
+<br>
+<b>Spare Parts Charge :  <input type="text" [(ngModel)] ="spareParts"></b>
+<br>
+<br>
+<b><input type="button" (click)="add()" value="Show Bill"></b>
+<br>
+<br>
+<br>
+<br>
+
+<b>Total Bill: {{result}}</b>
