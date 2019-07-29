@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: VehicleServiceWS
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: 770293
+Implementation-Vendor-Id: com.vehicle
+Build-Jdk: 1.8.0_92
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/VehicleServiceWS
+Created-By: Maven Integration for Eclipse
+
